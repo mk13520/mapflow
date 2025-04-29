@@ -1,3 +1,4 @@
+import '@/styles/globals.css';
 import 'leaflet/dist/leaflet.css'; //CSS読み込み
 
 
