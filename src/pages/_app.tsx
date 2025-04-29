@@ -1,3 +1,6 @@
+import 'leaflet/dist/leaflet.css'; //CSS読み込み
+
+
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 
