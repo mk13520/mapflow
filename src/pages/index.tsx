@@ -12,8 +12,8 @@ export default function Home() {
       <header className="bg-blue-900 text-white p-4 flex items-center space-x-4">
         {/* 名前選択プルダウン */}
         <select className="text-black p-1 rounded">
-          <option>ユーザーA</option>
-          <option>ユーザーB</option>
+          <option>ユーザー1</option>
+          <option>ユーザー2</option>
         </select>
 
         {/* 月の入力 */}
@@ -33,16 +33,17 @@ export default function Home() {
 
 
       {/* メインに地図 */}
-      <main className="flex-grow relative" >
+      <main className=" relative h-[600px]" >
         <Map />
-      </main>
+      
 
       {/* 交通手段ボタン（右下に縦並び） */}
-      <div className="absolute bottom-4 right-4 flex flex-col space-y-2">
+      <div className="absolute bottom-4 right-4 z-50 flex flex-col space-y-2">
         <button className="bg-red-500 text-white w-28 h-10 rounded">新幹線</button>
         <button className="bg-blue-500 text-white w-28 h-10 rounded">高速道路</button>
         <button className="bg-green-500 text-white w-28 h-10 rounded">鉄道</button>
       </div>
+      </main>
     </div>
   );
 }

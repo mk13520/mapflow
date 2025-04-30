@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 export default function Map() {
@@ -15,16 +15,13 @@ export default function Map() {
     <MapContainer
       center={[35.681, 139.767]} // 東京駅
       zoom={13}
-      className="w-full h-[500px]"
+      className="w-full h-full z-0"
     >
       <TileLayer
         attribution='&copy; OpenStreetMap contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[35.681, 139.767]}>
-        <Popup>東京駅</Popup>
-      </Marker>
-    </MapContainer>
+        </MapContainer>
   );
 }
 
