@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 import Header from '../components/Header'; 
-/*import Window from '../components/Window';*/
+import Window from '../components/Window';
 
 const Map = dynamic(() => import('../components/Map'), { ssr: false }); 
 
@@ -10,12 +10,9 @@ export default function Home() {
       <Header /> {/*ヘッダー呼び出し*/}
       <main className="relative h-[600px]">
         <Map /> {/*マップ*/}
-        {/*<Window/> 情報ウィンドウ*/}
+        <Window/> {/*情報ウィンドウ*/}
       </main>
     </div>
   );
 }
 
-/*index.tsx sample.json window.tsx header.tsx map.tsx app.tsx　変更 
-
-*/

@@ -1,7 +1,7 @@
 export default function HeaderForm() {
     return (
       <header className="bg-gray-950 text-white p-4 flex flex-wrap items-center gap-4">
-        {/* フォーム */}
+        {/*projectプルダウン*/}
   <div className="flex flex-col text-sm">
     <select className="bg-white text-black px-4 py-2 rounded w-64">
       <option>セントレア</option>
